@@ -11,9 +11,7 @@ class Anagram
   private
   def anagram?(word)
     w = word.downcase
-    if w == @word || w.length != @word.length
-      return false
-    end
+    return false if w == @word || w.length != @word.length
     w.chars.sort == @letters
   end
 end

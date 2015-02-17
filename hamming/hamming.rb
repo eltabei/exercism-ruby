@@ -5,6 +5,6 @@ class Hamming
     elsif a.length < b.length
       b = b[0, a.length]
     end
-    a.chars.zip(b.chars).count { |x, y| x != y }
+    a.each_char.zip(b.chars).count { |x, y| x != y }
   end
 end

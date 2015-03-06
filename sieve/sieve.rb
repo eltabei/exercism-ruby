@@ -12,6 +12,6 @@ class Sieve
         n += p
       end
     end
-    return numbers
+    numbers
   end
 end

@@ -34,6 +34,6 @@ class Luhn
       n2 = n * 10 + i
       return n2 if Luhn.new(n2).valid?
     end
-    return 0
+    0
   end
 end
